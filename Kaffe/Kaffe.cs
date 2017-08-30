@@ -8,11 +8,25 @@ namespace Kaffe
 {
     public  abstract class Kaffe
     {
-        public abstract int pris();
+        public abstract int Pris();
 
-        public virtual string styrke()
+        public virtual string Styrke()
         {
             return "stærk";
+        }
+        /// <summary>
+        /// Hvor meget rabat man får fra kaffen
+        /// </summary>
+        public int Rabat { get; set; }
+
+        public Kaffe()
+        {
+            this.Rabat = 0;
+        }
+
+        protected Kaffe(int rabat)
+        {
+            this.Rabat = rabat;
         }
     }
 }

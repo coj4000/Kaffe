@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Kaffe
 {
-    class Latte : Kaffe
+   public class Latte : Kaffe
     {
-        public override int pris()
+        public override int Pris()
         {
             return 40;
         }

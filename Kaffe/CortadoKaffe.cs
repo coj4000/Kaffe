@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace Kaffe
 {
-    class CortadoKaffe : Kaffe
+    public class CortadoKaffe : Kaffe
     {
-        public override int pris()
+        /// <summary>
+        /// Prisen på CortadoKaffe
+        /// </summary>
+        /// <returns></returns>
+        public override int Pris()
         {
             return 25;
         }
