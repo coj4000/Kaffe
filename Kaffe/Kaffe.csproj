@@ -40,7 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CortadoKaffe.cs" />
     <Compile Include="Kaffe.cs" />
+    <Compile Include="Latte.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SortKaffe.cs" />
   </ItemGroup>
