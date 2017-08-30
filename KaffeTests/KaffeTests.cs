@@ -25,10 +25,23 @@ namespace Kaffe.Tests
         }
         [TestMethod()]
         [ExpectedException((typeof(ArgumentException)))]
-        public void prisTestKaffeForMegetRabat()
+        public void prisTestKaffeForMegetRabat20kr()
         {
             //Arrange
-            var kaffe = new SortKaffe();
+            var kaffe = new SortKaffe(20);
+            //Act
+            int pris = kaffe.Pris();
+            //Assert
+
+
+        }
+
+        [TestMethod()]
+        [ExpectedException((typeof(ArgumentException)))]
+        public void prisTestKaffeForMegetRabat21kr()
+        {
+            //Arrange
+            var kaffe = new SortKaffe(21);
             //Act
             int pris = kaffe.Pris();
             //Assert
@@ -44,6 +57,30 @@ namespace Kaffe.Tests
             //string styrke = kaffe.styrke();
             ////Assert
             //Assert.AreEqual("stærk", styrke);
+        }
+        public void TestKaffeListe()
+        {
+            //Arrange
+            var kaffeListe = new List<IMælk>();
+
+            var cortado = new CortadoKaffe();
+            var latte = new Latte();
+            var sortKaffe = new SortKaffe();
+            kaffeListe.Add(cortado);
+            kaffeListe.Add(latte);
+            // kaffeliste.Add(sortKaffe);
+            int total = 0;
+            foreach (var kaffeitem in kaffeListe)
+            {
+                total += kaffeitem.MlMælk();
+                //if (kaffeitem is CortadoKaffe)
+                //{
+                //    var localCortado = kaffeitem as CortadoKaffe;
+                //}
+                //kaffeitem.MlMælk();
+            }
+            //Assert
+            Assert.AreEqual(145, total);
         }
     }
 }

@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace Kaffe
 {
-   public class Latte : Kaffe
+   public class Latte : Kaffe, IMælk
     {
+        public int MlMælk()
+        {
+            return 120;
+        }
+
         public override int Pris()
         {
             return 40;

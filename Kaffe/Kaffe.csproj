@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CortadoKaffe.cs" />
+    <Compile Include="IMælk.cs" />
     <Compile Include="Kaffe.cs" />
     <Compile Include="Latte.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

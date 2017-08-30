@@ -14,6 +14,9 @@ namespace Kaffe
         {
             return "stærk";
         }
+
+       
+
         /// <summary>
         /// Hvor meget rabat man får fra kaffen
         /// </summary>

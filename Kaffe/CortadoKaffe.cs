@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace Kaffe
 {
-    public class CortadoKaffe : Kaffe
+    public class CortadoKaffe : Kaffe, IMælk
     {
+        public int MlMælk()
+        {
+            return 25;
+        }
+
         /// <summary>
         /// Prisen på CortadoKaffe
         /// </summary>
